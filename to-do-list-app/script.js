@@ -21,7 +21,7 @@ if(inputDOM.value.length>0 ){
    liDOM.innerHTML= `${inputDOM.value} ${x}` 
    ulDOM.appendChild(liDOM)
    liDOM.addEventListener("click", blue)
-   inputDOM.value = ""
+   inputDOM.value = "" // inputa girilen değer temizlenir
    // çarpıya basıldığında liste elamanını kaldırmak 
 $('li').hover(function(){
      $(this).find('span').click(function(){
@@ -33,7 +33,6 @@ $('li').hover(function(){
     liDOM.className == "checked" ? liDOM.classList.remove("checked"): liDOM.classList.add("checked")
   
 }
-
    $(".success").toast('show')
 }else{
    $(".error").toast('show')
@@ -48,12 +47,3 @@ for(let i =0; i<liAll.length;i++) {
       liAll[i].className == "checked" ? liAll[i].classList.remove("checked"): liAll[i].classList.add("checked")
    })
 }   
-
-
-
-
-
-
-
-
-
