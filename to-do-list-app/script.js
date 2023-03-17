@@ -21,6 +21,7 @@ if(inputDOM.value.length>0 ){
    liDOM.innerHTML= `${inputDOM.value} ${x}` 
    ulDOM.appendChild(liDOM)
    liDOM.addEventListener("click", blue)
+   inputDOM.value = ""
    // çarpıya basıldığında liste elamanını kaldırmak 
 $('li').hover(function(){
      $(this).find('span').click(function(){
